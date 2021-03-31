@@ -55,7 +55,7 @@
       </div>
       <div class="latest-journals">
         <div class="container">
-          <g-link to="/journal/gridsome-forestry-cms/" class="journal" v-for="journal in journals" :key="journal.node.id">
+          <g-link :to="'/journal/' + journal.node.slug" class="journal" v-for="journal in journals" :key="journal.node.id">
             <h3 class="journal-title">{{journal.node.title}}</h3>
           </g-link>
           <!-- <a href="/journal/use-gridsome-vuejs/" class="journal">
@@ -102,6 +102,7 @@
         node {
           id
           title
+          slug
         }
       }
     }

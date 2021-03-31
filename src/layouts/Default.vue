@@ -8,7 +8,7 @@
           </g-link>
         </div>
         <nav class="nav right">
-          <g-link to="/journal" class="nav">Journal</g-link>
+          <g-link to="/journals" class="nav">Journal</g-link>
           <g-link to="/contact" class="nav">Say Hi!</g-link>
         </nav>
       </div>

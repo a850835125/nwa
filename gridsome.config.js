@@ -12,15 +12,13 @@ module.exports = {
     svgRule.use('vue-svg-loader').loader('vue-svg-loader')
   },
   siteName: 'Gridsome',
-  plugins: [
-    {
-      use: '@gridsome/source-strapi',
-      options: {
-        apiURL: process.env.GRIDSOME_API_URL,
-        queryLimit: 1000,
-        contentTypes: ['categories', 'contact', 'journal', 'project'],
-        singleTypes: ['index-general']
-      }
+  plugins: [{
+    use: '@gridsome/source-strapi',
+    options: {
+      apiURL: process.env.GRIDSOME_API_URL,
+      queryLimit: 1000,
+      contentTypes: ['categories', 'contact', 'journal', 'project'],
+      singleTypes: ['index-general']
     }
-  ]
+  }]  
 }
