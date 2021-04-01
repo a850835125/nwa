@@ -311,11 +311,11 @@ h6 {
   max-width: 840px
 }
 
-.journal-header {
+.single-journal-header {
   padding: 2rem 0 4rem
 }
 
-.journal-title {
+.single-journal-title {
   font-size: 4rem;
   margin: 0 0 4rem;
   padding: 0
@@ -520,7 +520,7 @@ textarea {
   box-shadow: 0 0 40px -20px rgba(0, 0, 0, .25)
 }
 
-.project-title {
+.projects-title {
   font-size: 1rem;
   color: var(--color-contrast);
   margin: 2rem 0 1rem
@@ -573,7 +573,7 @@ textarea {
   flex-wrap: wrap
 }
 
-.journal {
+.journals {
   flex: 0 0 100%;
   display: block;
   padding: 2rem;
@@ -582,11 +582,11 @@ textarea {
   border-bottom: 1px solid var(--color-base-1)
 }
 
-.journal:last-of-type {
+.journals:last-of-type {
   border-bottom: 0
 }
 
-.journal:hover {
+.journals:hover {
   background: var(--color-base-1)
 }
 
@@ -596,33 +596,33 @@ textarea {
 }
 
 @media (min-width:580px) {
-  .journal {
+  .journals {
     flex: 0 0 50%
   }
 
-  .journal:first-child {
+  .journals:first-child {
     border-right: 1px solid var(--color-base-1)
   }
 
-  .journal:first-child,
-  .journal:nth-child(2) {
+  .journals:first-child,
+  .journals:nth-child(2) {
     border-bottom: 1px solid var(--color-base-1)
   }
 
-  .journal:nth-child(3) {
+  .journals:nth-child(3) {
     border-right: 1px solid var(--color-base-1);
     border-bottom: 0
   }
 }
 
 @media (min-width:920px) {
-  .journal {
+  .journals {
     flex: 0 0 25%
   }
 
-  .journal:first-child,
-  .journal:nth-child(2),
-  .journal:nth-child(3) {
+  .journals:first-child,
+  .journals:nth-child(2),
+  .journals:nth-child(3) {
     border: 0;
     border-right: 1px solid var(--color-base-1)
   }

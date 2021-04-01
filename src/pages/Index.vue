@@ -7,12 +7,11 @@
       </div>
       <div class="projects">
         <div class="project" v-for="project in projects" :key="project.node.id">
-          <g-link to="/projects/chelsea-landmark/" class="project-link">
+          <g-link :to="'/projects/' + project.node.pid" class="project-link">
             <img alt="Banana" :src="GRIDSOME_API_URL + project.node.image.url" width="2560" class="thumbnail g-image g-image--loaded">
-            <h3 class="project-title">{{project.node.title}}</h3>
+            <h3 class="projects-title">{{project.node.title}}</h3>
             <div class="categories">
               <span class="category" v-for="category in project.node.categories">{{category.title}}</span>
-              <span class="category">pink</span>
             </div>
           </g-link>
         </div>
@@ -55,8 +54,8 @@
       </div>
       <div class="latest-journals">
         <div class="container">
-          <g-link :to="'/journal/' + journal.node.slug" class="journal" v-for="journal in journals" :key="journal.node.id">
-            <h3 class="journal-title">{{journal.node.title}}</h3>
+          <g-link :to="'/journal/' + journal.node.slug" class="journals" v-for="journal in journals" :key="journal.node.id">
+            <h3 class="journals-title">{{journal.node.title}}</h3>
           </g-link>
           <!-- <a href="/journal/use-gridsome-vuejs/" class="journal">
             <h3  class="journal-title">VueJS for your next project</h3>
@@ -78,6 +77,7 @@
         node {
           id
           title
+          pid
           image {
             url
           }
